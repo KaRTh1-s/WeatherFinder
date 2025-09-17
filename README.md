@@ -1,9 +1,3 @@
-# PRODIGY_WD_05
-
-Name:Karthikeyan S
-Company: Prodigy Infotech
-Domain: Web Development
-
 Weather App:
 -------------
 
