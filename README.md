@@ -7,3 +7,6 @@ Eg:
 ->Temperature
 ->Condition
 ->Humudity
+
+
+Note: API key gone invalid or inactive over time so please use your api key for better retrival.
