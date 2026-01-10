@@ -27,20 +27,6 @@ CSS3
 OpenWeather API
 Node.js & npm
 
-PROJECT STRUCTURE
-weatherfinder/
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── App.js
-│   ├── App.css 
-│   └── index.js
-│
-├── .env
-├── package.json
-└── README.md
 
 WORKING
 
