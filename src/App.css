@@ -1,38 +1,135 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App wrapper */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* LIGHT THEME */
+.app.light {
+  background: linear-gradient(135deg, #6fc8d4, #4a90e2);
+  color: #111;
+}
+
+/* DARK THEME */
+.app.dark {
+  background: radial-gradient(circle at top, #020617, #000000);
+  color: #e5e7eb;
+}
+
+/* Card */
+.container {
+  width: 380px;
+  padding: 2rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: background 0.4s ease;
+}
+
+.app.dark .container {
+  background: #0f172a;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #2563eb; /* FIXED: visible in dark mode */
+}
+
+.app.dark .title {
+  color: #60a5fa;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 0.8rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.theme-btn {
+  margin-top: 0.8rem;
+  background: linear-gradient(135deg, #06b6d4, #0284c7);
+}
+
+/* Weather card */
+.weather-card {
+  margin-top: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app.dark .weather-card {
+  background: rgba(2, 6, 23, 0.9);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Temperature */
+.temp {
+  font-size: 3.5rem;
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Description */
+.desc {
+  text-transform: capitalize;
+  opacity: 0.9;
+}
+
+/* Details */
+.details {
+  margin-top: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+/* Error */
+.error {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: #fecaca;
+  color: #7f1d1d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app.dark .error {
+  background: #7f1d1d;
+  color: #fecaca;
 }
