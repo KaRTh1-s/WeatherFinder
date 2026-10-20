@@ -1,95 +1,62 @@
-🌤️ WeatherFinder
+# 🌦️ Weather Finder — Cinematic Weather Intelligence
 
-WeatherFinder is a modern, responsive React web application that provides real-time weather information for any city using the OpenWeather API.
-It features a clean UI, dark/light mode, and robust error handling, making it suitable for learning, portfolios, and deployment on platforms like Netlify.
+Weather Finder is a modern, responsive weather application that combines real-time weather information with a cinematic user interface. It helps users explore current weather conditions, forecasts, and environmental insights through an interactive dashboard.
 
-🚀 Live Demo
-[https://weatherfinder.netlify.app
-](https://weatherfinder-v1.netlify.app/)
+## Features
 
+- Real-time weather information
+- City search and current-location detection
+- Celsius and Fahrenheit conversion
+- Hourly and 7-day weather forecasts
+- Interactive temperature and precipitation charts
+- Air quality and UV index information, where supported
+- Weather alerts, where available
+- Dynamic weather backgrounds and atmospheric animations
+- Responsive design for desktop, tablet, and mobile
+- Light and motion controls
 
-FEATURES
+## 🛠️ Tech Stack
 
-Search weather by city name
-Current temperature (°C)
-Weather condition with icon
-Humidity and 💨 wind speed
-Dark / ☀️ Light mode toggle
-Fast and responsive UI
-Graceful error handling (invalid city / API issues)
-Secure API key handling using environment variables
+- React
+- JavaScript
+- CSS
+- Weather API
+- Git and GitHub
+- Netlify or the configured hosting platform
 
-TECHNOLOGIES USED
+## 🚀 Getting Started
 
-React.js
-JavaScript (ES6+)
-CSS3
-OpenWeather API
-Node.js & npm
+### 1. Clone the repository
 
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+```
 
-WORKING
+### 2. Install dependencies
 
-User enters a city name
-The app sends a request to the OpenWeather API:
-https://api.openweathermap.org/data/2.5/weather
-The API returns real-time weather data
-The app displays temperature, condition, humidity, and wind speed
-Theme toggle switches between light and dark modes
-
-SETUP
-
-Step 1: Get a Free API Key
-Visit 👉 https://home.openweathermap.org/api_keys
-Sign up or log in
-Generate a new API key
-⏳ (New keys may take 10–30 minutes to activate)
-
-Step 2: Configure Environment Variable
-Create a .env file in the project root:
-REACT_APP_WEATHER_API_KEY=your_api_key_here
-
-⚠️ Notes:
-Do not use quotes
-No spaces
-Variable name must start with REACT_APP_
-
-Step 3: Restart the App
-npm start
-React reads environment variables only at startup.
-💻 Local Development
-
-
-Prerequisites
-Node.js (v16+ recommended)
-npm
-
-
-Installation
-# Clone the repository
-git clone https://github.com/KaRTh1-s/WeatherFinder.git
-
-# Navigate to the project
-cd weatherfinder
-
-# Install dependencies
+```bash
 npm install
+```
 
-# Start the development server
-npm start
+### 3. Configure environment variables
 
+Configure any required API keys using the environment variable names expected by your project. Never commit secret credentials to GitHub.
 
-Open your browser at:
+### 4. Run the application
 
-http://localhost:3000
+```bash
+npm run dev
+```
 
+Open the local URL displayed in your terminal.
 
-The app handles:
+## 🏗️ Build for Production
 
-Invalid city names
+```bash
+npm run build
+```
 
-Network errors
+**Weather Finder — Cinematic Weather Intelligence**
 
-Missing or invalid API keys
-
-Clear, user-friendly messages are shown to the user.
+*Experience weather through data, design, and interactive visualization.*
