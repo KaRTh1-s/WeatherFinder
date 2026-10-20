@@ -29,8 +29,8 @@ Weather Finder is a modern, responsive weather application that combines real-ti
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd YOUR_PROJECT_FOLDER
+git clone https://github.com/KaRTh1-s/WeatherFinder.git
+cd WeatherFinder
 ```
 
 ### 2. Install dependencies
